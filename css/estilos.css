@@ -1,0 +1,365 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+/***Header Cabecera de la pagina****/
+header{
+    text-align: center;
+    height: 100px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    background-color: rgb(118, 118, 232);
+    color: #faf3f3;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+}
+header div{
+    display: flex;
+    gap: 20px;
+}
+header div img{ 
+    width: 90px;
+    height: 90px;
+    margin: 5px;
+}
+
+
+         /****El estilo de la barra de navegacción dentro del header****/
+header nav{padding: 15px 15px;
+        display:flex;
+    justify-content: space-between;
+    }
+
+
+header nav ul{display:flex;
+    justify-content: space-between;
+    
+}
+header nav ul li{
+    list-style: none;
+}
+header nav ul li a {
+    padding: 10px 10px;
+    text-decoration:wavy;
+    color: #ffffff;
+    
+    }
+nav ul li a:hover{
+        background: #6dd76d;
+        color: #21211f;
+    }
+           /****THE FLEXIBLE CONTENT****/
+    /* Seccion de Nuestro Credo*/
+main section{
+    min-height: 10vh;
+    margin-bottom: 20px;
+}
+
+.container1 img{
+width: 100%;
+height: 350px;
+}
+
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    gap: 130px;
+    text-align: center;
+    margin: 50px;
+}
+.color{
+    
+    color: #309e30;}
+
+/***Seccion con el class contenido**/
+.contenido{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    margin-bottom: 100px;
+}
+section h3{ 
+    text-align: center;
+    color: rgb(48, 158, 48);
+    font-size: 50px;
+    font-weight: bold;
+    margin: 20px;
+
+}
+.top-ventas{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: space-between;
+    gap: 10px;
+}  
+.top-venta{
+    height: 350px;
+    display: grid;
+    grid-template-rows: 75% 25%;
+    text-align: center;
+    background-color: #ddd;
+    box-shadow: 0px 0px 0px 0px 10px rgb(0, 0, 0, 0.1);
+} 
+.top-venta:hover{
+    transform: translate(-10px);
+    opacity: 1;
+    cursor: pointer;
+}
+.top-venta img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.descripcion{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff;
+    padding: 5px;
+
+
+}
+/****Seccion de presupuesto***/
+.pre-form{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 30px;
+    height: 100%;
+    background-color: #fcfbfb;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 2% 5% 2% 5%;
+    
+}
+
+.pre-form label{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.pre-form input .pre-form textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border:1px solid #ccc;
+    border-radius: 5px;
+}
+.pre-form input[type="submit"]{
+    background-color: #aece7e;
+    color: #fff;
+    padding: 10px 20px;
+    cursor:grab ;
+}
+
+/******SECTION DE LOS CONTACTOS******/
+.contact{
+    margin-bottom: 50px;
+    text-align:left;
+    margin: 20px;
+}
+
+.contacto{
+    display: flex;
+    justify-content: space-between;
+}
+.contacto div {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    text-align: center;
+    width: 65%;
+}
+.contacto div h3{
+    font-size: 22px;
+    text-align: none;
+}
+
+
+    /****Nuestra seccion de galeria*****/
+    section .galeria{
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2vmin;
+        padding: 0  0 15px; 
+        background-color: rgb(225, 243, 243);  
+    }
+   section .galeria::after{
+        content: "";
+        display: block;
+        flex-grow: 15;
+    }
+    section .galeria .gal {
+        list-style-type: none;
+        height: 200px;
+        flex-grow: 2;
+        transition: 1s;
+
+    }
+    section .galeria .gal img { 
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        cursor: pointer;
+        transition: .6s cubic-bezier(0.28, -0.03, 0, 1);
+        box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+    }
+    section .galeria .gal:hover{
+        transform: scale(1.3);
+        z-index: 2;
+
+    }
+    
+
+
+            /***FOOTER EL PIE DE LA PAGINÁ***/
+
+footer{
+    flex-shrink: 0;
+    border-top: 1px dashed #000;
+    height: auto;
+    background-color:rgb(109, 215, 109);
+   
+    
+    
+}
+.contenido-footer{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 2opx;
+    padding: 30px 0 20px;
+
+}
+.bloc{
+    width: 40%;
+    margin: 30px;
+}
+    
+
+
+            /***Footer del bloque de los servicios y horarios *****/
+
+.lista-servicio h3,
+.lista-horario h3, 
+.lista-redes h3 {
+    list-style-type: none;
+
+}
+footer h3{
+    font-size: 30px;
+    color:#ffffff;
+
+}
+
+.lista-servicio li{
+    padding: 10px ;
+    color: black;
+}
+.lista-horario li{
+    padding: 3px ;
+    color: black;
+}
+
+
+
+
+              /***Footer del bloque de los Redes Sociales***/
+
+.lista-redes{
+    position: relative;
+    right: 10px;  
+}
+.lista-redes img{
+    width: 20px;
+    margin: 10px 10px;
+}
+.lista-redes a {
+    text-decoration: none;
+    color:black;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+
+}
+            /******Footer de los derechos*******/
+.privado{
+    color: white;
+}
+
+
+        /********`PARA LAS DIFERENTES PANTALLAS******/
+        /****Para tablet****/
+@media(max-width: 900px){
+    header, nav, main, footer{
+        width: 100%;
+        height: auto;
+    }
+    header{
+        align-items: center;
+        position: relative;
+    }
+    main{
+        flex-direction: column;
+    }
+    main section div .top-ventas{
+        flex-direction: column;
+    }
+}
+     /****Para Movíl****/
+@media(max-width: 498px){
+     header, main, footer{
+        width: 100%;
+        height: auto;
+    }
+    header{
+        flex-direction: column;
+        }
+
+    nav{
+        display: flex;
+        width: 100%;
+        margin: 2px;
+        flex-direction: column;  
+    }
+    main{
+        flex-direction: column;
+    }
+    main section div .contenido{
+        flex-direction: column;
+        width: 500px;
+    }
+    .top-ventas{
+        display: contents;
+    }
+    
+    nav{
+        color: #000
+    }
+    .contact{
+        width: 100%;
+        margin-top: 50px;
+        flex-direction: column;       
+    }
+    iframe{
+        width: 75px;
+        height: 75px;
+        display: contents;
+
+    }
+    main section .contacto div{
+        flex-direction: column;
+            }
+}
